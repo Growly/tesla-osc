@@ -1,0 +1,441 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: pulse_generator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pulse_generator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pulse_generator"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : pulse_generator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\vhdl_fun\pulse_generator.vhd" into library work
+Parsing entity <pulse_generator>.
+Parsing architecture <Behavioral> of entity <pulse_generator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <pulse_generator> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\vhdl_fun\pulse_generator.vhd" Line 72: running should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\vhdl_fun\pulse_generator.vhd" Line 79: running should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pulse_generator>.
+    Related source file is "C:\vhdl_fun\pulse_generator.vhd".
+    Found 1-bit register for signal <running>.
+    Found 28-bit register for signal <counter_int>.
+    Found 28-bit adder for signal <counter_int[27]_GND_5_o_add_1_OUT> created at line 70.
+    Found 28-bit comparator greater for signal <counter_int[27]_GND_5_o_LessThan_4_o> created at line 79
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <pulse_generator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 28-bit adder                                          : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 28-bit register                                       : 1
+# Comparators                                          : 1
+ 28-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <pulse_generator>.
+The following registers are absorbed into counter <counter_int>: 1 register on signal <counter_int>.
+Unit <pulse_generator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 28-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 1
+ 28-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <pulse_generator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pulse_generator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pulse_generator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 93
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 27
+#      LUT3                        : 1
+#      LUT4                        : 1
+#      LUT6                        : 5
+#      MUXCY                       : 27
+#      VCC                         : 1
+#      XORCY                       : 28
+# FlipFlops/Latches                : 29
+#      FDC                         : 29
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 30
+#      IBUF                        : 1
+#      OBUF                        : 29
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              29  out of  54576     0%  
+ Number of Slice LUTs:                   36  out of  27288     0%  
+    Number used as Logic:                36  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     37
+   Number with an unused Flip Flop:       8  out of     37    21%  
+   Number with an unused LUT:             1  out of     37     2%  
+   Number of fully used LUT-FF pairs:    28  out of     37    75%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    218    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+trigger                            | BUFGP                  | 1     |
+clock                              | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.251ns (Maximum Frequency: 444.197MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.647ns
+   Maximum combinational path delay: 5.402ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 2.251ns (frequency: 444.197MHz)
+  Total number of paths / destination ports: 406 / 28
+-------------------------------------------------------------------------
+Delay:               2.251ns (Levels of Logic = 29)
+  Source:            counter_int_0 (FF)
+  Destination:       counter_int_27 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: counter_int_0 to counter_int_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.650  counter_int_0 (counter_int_0)
+     INV:I->O              1   0.206   0.000  Mcount_counter_int_lut<0>_INV_0 (Mcount_counter_int_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_counter_int_cy<0> (Mcount_counter_int_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<1> (Mcount_counter_int_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<2> (Mcount_counter_int_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<3> (Mcount_counter_int_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<4> (Mcount_counter_int_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<5> (Mcount_counter_int_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<6> (Mcount_counter_int_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<7> (Mcount_counter_int_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<8> (Mcount_counter_int_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<9> (Mcount_counter_int_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<10> (Mcount_counter_int_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<11> (Mcount_counter_int_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<12> (Mcount_counter_int_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<13> (Mcount_counter_int_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<14> (Mcount_counter_int_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<15> (Mcount_counter_int_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<16> (Mcount_counter_int_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<17> (Mcount_counter_int_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<18> (Mcount_counter_int_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<19> (Mcount_counter_int_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<20> (Mcount_counter_int_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<21> (Mcount_counter_int_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<22> (Mcount_counter_int_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<23> (Mcount_counter_int_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<24> (Mcount_counter_int_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<25> (Mcount_counter_int_cy<25>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_counter_int_cy<26> (Mcount_counter_int_cy<26>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_counter_int_xor<27> (Result<27>)
+     FDC:D                     0.102          counter_int_27
+    ----------------------------------------
+    Total                      2.251ns (1.601ns logic, 0.650ns route)
+                                       (71.1% logic, 28.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 30 / 29
+-------------------------------------------------------------------------
+Offset:              4.587ns (Levels of Logic = 2)
+  Source:            counter_int_27 (FF)
+  Destination:       pulse (PAD)
+  Source Clock:      clock rising
+
+  Data Path: counter_int_27 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.788  counter_int_27 (counter_int_27)
+     LUT4:I2->O            1   0.203   0.579  pulse1 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      4.587ns (3.221ns logic, 1.366ns route)
+                                       (70.2% logic, 29.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'trigger'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.647ns (Levels of Logic = 2)
+  Source:            running (FF)
+  Destination:       pulse (PAD)
+  Source Clock:      trigger rising
+
+  Data Path: running to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.845  running (running)
+     LUT4:I1->O            1   0.205   0.579  pulse1 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      4.647ns (3.223ns logic, 1.424ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.402ns (Levels of Logic = 3)
+  Source:            enable (PAD)
+  Destination:       pulse (PAD)
+
+  Data Path: enable to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.827  enable_IBUF (enable_IBUF)
+     LUT4:I0->O            1   0.203   0.579  pulse1 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      5.402ns (3.996ns logic, 1.406ns route)
+                                       (74.0% logic, 26.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    2.251|         |         |         |
+trigger        |    2.934|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock trigger
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    7.266|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.92 secs
+ 
+--> 
+
+Total memory usage is 258708 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

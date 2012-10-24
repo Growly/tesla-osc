@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Fri Oct 19 23:14:01 2012
+# Process ID: 4760
+# Log file: C:/vhdl_fun/planAhead_run_1/planAhead.log
+# Journal file: C:/vhdl_fun/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/vhdl_fun/pa.fromNetlist.tcl

@@ -1,0 +1,2 @@
+vhdl isim_temp "pulse_generator.vhd"
+vhdl isim_temp "pulse_generator_testbench.vhd"
