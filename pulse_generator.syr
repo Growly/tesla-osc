@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: pulse_generator.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\vhdl_fun\pulse_generator.vhd" into library work
+Parsing VHDL file "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_generator.vhd" into library work
 Parsing entity <pulse_generator>.
 Parsing architecture <Behavioral> of entity <pulse_generator>.
 
@@ -114,22 +114,20 @@ Parsing architecture <Behavioral> of entity <pulse_generator>.
 =========================================================================
 
 Elaborating entity <pulse_generator> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\vhdl_fun\pulse_generator.vhd" Line 72: running should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\vhdl_fun\pulse_generator.vhd" Line 79: running should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_generator.vhd" Line 64: enable should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <pulse_generator>.
-    Related source file is "C:\vhdl_fun\pulse_generator.vhd".
-    Found 1-bit register for signal <running>.
+    Related source file is "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_generator.vhd".
     Found 28-bit register for signal <counter_int>.
-    Found 28-bit adder for signal <counter_int[27]_GND_5_o_add_1_OUT> created at line 70.
-    Found 28-bit comparator greater for signal <counter_int[27]_GND_5_o_LessThan_4_o> created at line 79
+    Found 28-bit adder for signal <counter_int[27]_GND_5_o_add_0_OUT> created at line 52.
+    Found 28-bit comparator greater for signal <counter_int[27]_GND_5_o_LessThan_4_o> created at line 64
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  29 D-type flip-flop(s).
+	inferred  28 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <pulse_generator> synthesized.
 
@@ -139,8 +137,7 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  28-bit adder                                          : 1
-# Registers                                            : 2
- 1-bit register                                        : 1
+# Registers                                            : 1
  28-bit register                                       : 1
 # Comparators                                          : 1
  28-bit comparator greater                             : 1
@@ -162,8 +159,6 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  28-bit up counter                                     : 1
-# Registers                                            : 1
- Flip-Flops                                            : 1
 # Comparators                                          : 1
  28-bit comparator greater                             : 1
 
@@ -185,8 +180,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 29
- Flip-Flops                                            : 29
+# Registers                                            : 28
+ Flip-Flops                                            : 28
 
 =========================================================================
 
@@ -209,20 +204,22 @@ Top Level Output File Name         : pulse_generator.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 93
+# BELS                             : 110
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 27
+#      LUT2                        : 1
 #      LUT3                        : 1
 #      LUT4                        : 1
-#      LUT6                        : 5
-#      MUXCY                       : 27
+#      LUT5                        : 9
+#      LUT6                        : 6
+#      MUXCY                       : 33
 #      VCC                         : 1
 #      XORCY                       : 28
-# FlipFlops/Latches                : 29
-#      FDC                         : 29
-# Clock Buffers                    : 2
-#      BUFGP                       : 2
+# FlipFlops/Latches                : 28
+#      FDC                         : 28
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
 # IO Buffers                       : 30
 #      IBUF                        : 1
 #      OBUF                        : 29
@@ -234,23 +231,23 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              29  out of  54576     0%  
- Number of Slice LUTs:                   36  out of  27288     0%  
-    Number used as Logic:                36  out of  27288     0%  
+ Number of Slice Registers:              28  out of  54576     0%  
+ Number of Slice LUTs:                   47  out of  27288     0%  
+    Number used as Logic:                47  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     37
-   Number with an unused Flip Flop:       8  out of     37    21%  
-   Number with an unused LUT:             1  out of     37     2%  
-   Number of fully used LUT-FF pairs:    28  out of     37    75%  
+ Number of LUT Flip Flop pairs used:     47
+   Number with an unused Flip Flop:      19  out of     47    40%  
+   Number with an unused LUT:             0  out of     47     0%  
+   Number of fully used LUT-FF pairs:    28  out of     47    59%  
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                          32
- Number of bonded IOBs:                  32  out of    218    14%  
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of    218    14%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -273,7 +270,6 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-trigger                            | BUFGP                  | 1     |
 clock                              | BUFGP                  | 28    |
 -----------------------------------+------------------------+-------+
 
@@ -285,10 +281,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.251ns (Maximum Frequency: 444.197MHz)
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 4.647ns
-   Maximum combinational path delay: 5.402ns
+   Minimum period: 4.190ns (Maximum Frequency: 238.655MHz)
+   Minimum input arrival time before clock: 3.851ns
+   Maximum output required time after clock: 6.207ns
+   Maximum combinational path delay: 5.228ns
 
 Timing Details:
 ---------------
@@ -296,99 +292,79 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock'
-  Clock period: 2.251ns (frequency: 444.197MHz)
-  Total number of paths / destination ports: 406 / 28
+  Clock period: 4.190ns (frequency: 238.655MHz)
+  Total number of paths / destination ports: 1190 / 56
 -------------------------------------------------------------------------
-Delay:               2.251ns (Levels of Logic = 29)
-  Source:            counter_int_0 (FF)
-  Destination:       counter_int_27 (FF)
+Delay:               4.190ns (Levels of Logic = 2)
+  Source:            counter_int_19 (FF)
+  Destination:       counter_int_0 (FF)
   Source Clock:      clock rising
   Destination Clock: clock rising
 
-  Data Path: counter_int_0 to counter_int_27
+  Data Path: counter_int_19 to counter_int_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.447   0.650  counter_int_0 (counter_int_0)
-     INV:I->O              1   0.206   0.000  Mcount_counter_int_lut<0>_INV_0 (Mcount_counter_int_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Mcount_counter_int_cy<0> (Mcount_counter_int_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<1> (Mcount_counter_int_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<2> (Mcount_counter_int_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<3> (Mcount_counter_int_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<4> (Mcount_counter_int_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<5> (Mcount_counter_int_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<6> (Mcount_counter_int_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<7> (Mcount_counter_int_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<8> (Mcount_counter_int_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<9> (Mcount_counter_int_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<10> (Mcount_counter_int_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<11> (Mcount_counter_int_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<12> (Mcount_counter_int_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<13> (Mcount_counter_int_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<14> (Mcount_counter_int_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<15> (Mcount_counter_int_cy<15>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<16> (Mcount_counter_int_cy<16>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<17> (Mcount_counter_int_cy<17>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<18> (Mcount_counter_int_cy<18>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<19> (Mcount_counter_int_cy<19>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<20> (Mcount_counter_int_cy<20>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<21> (Mcount_counter_int_cy<21>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<22> (Mcount_counter_int_cy<22>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<23> (Mcount_counter_int_cy<23>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<24> (Mcount_counter_int_cy<24>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_counter_int_cy<25> (Mcount_counter_int_cy<25>)
-     MUXCY:CI->O           0   0.019   0.000  Mcount_counter_int_cy<26> (Mcount_counter_int_cy<26>)
-     XORCY:CI->O           1   0.180   0.000  Mcount_counter_int_xor<27> (Result<27>)
-     FDC:D                     0.102          counter_int_27
+     FDC:C->Q              5   0.447   1.079  counter_int_19 (counter_int_19)
+     LUT6:I0->O            2   0.203   0.845  enable_counter_int[27]_OR_28_o4 (enable_counter_int[27]_OR_28_o4)
+     LUT6:I3->O           15   0.205   0.981  enable_counter_int[27]_OR_28_o6 (enable_counter_int[27]_OR_28_o)
+     FDC:CLR                   0.430          counter_int_0
     ----------------------------------------
-    Total                      2.251ns (1.601ns logic, 0.650ns route)
-                                       (71.1% logic, 28.9% route)
+    Total                      4.190ns (1.285ns logic, 2.905ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Offset:              3.851ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       counter_int_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: enable to counter_int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   1.015  enable_IBUF (enable_IBUF)
+     LUT6:I0->O           15   0.203   0.981  enable_counter_int[27]_OR_28_o6 (enable_counter_int[27]_OR_28_o)
+     FDC:CLR                   0.430          counter_int_0
+    ----------------------------------------
+    Total                      3.851ns (1.855ns logic, 1.996ns route)
+                                       (48.2% logic, 51.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
-  Total number of paths / destination ports: 30 / 29
+  Total number of paths / destination ports: 78 / 29
 -------------------------------------------------------------------------
-Offset:              4.587ns (Levels of Logic = 2)
-  Source:            counter_int_27 (FF)
+Offset:              6.207ns (Levels of Logic = 9)
+  Source:            counter_int_4 (FF)
   Destination:       pulse (PAD)
   Source Clock:      clock rising
 
-  Data Path: counter_int_27 to pulse
+  Data Path: counter_int_4 to pulse
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.447   0.788  counter_int_27 (counter_int_27)
-     LUT4:I2->O            1   0.203   0.579  pulse1 (pulse_OBUF)
+     FDC:C->Q              5   0.447   1.059  counter_int_4 (counter_int_4)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_lut<0> (Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<0> (Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<1> (Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<2> (Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<3> (Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<4> (Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.684  Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<5> (Mcompar_counter_int[27]_GND_5_o_LessThan_4_o_cy<5>)
+     LUT2:I0->O            1   0.203   0.579  pulse1 (pulse_OBUF)
      OBUF:I->O                 2.571          pulse_OBUF (pulse)
     ----------------------------------------
-    Total                      4.587ns (3.221ns logic, 1.366ns route)
-                                       (70.2% logic, 29.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'trigger'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.647ns (Levels of Logic = 2)
-  Source:            running (FF)
-  Destination:       pulse (PAD)
-  Source Clock:      trigger rising
-
-  Data Path: running to pulse
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.447   0.845  running (running)
-     LUT4:I1->O            1   0.205   0.579  pulse1 (pulse_OBUF)
-     OBUF:I->O                 2.571          pulse_OBUF (pulse)
-    ----------------------------------------
-    Total                      4.647ns (3.223ns logic, 1.424ns route)
-                                       (69.4% logic, 30.6% route)
+    Total                      6.207ns (3.885ns logic, 2.322ns route)
+                                       (62.6% logic, 37.4% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               5.402ns (Levels of Logic = 3)
+Delay:               5.228ns (Levels of Logic = 3)
   Source:            enable (PAD)
   Destination:       pulse (PAD)
 
@@ -396,12 +372,12 @@ Delay:               5.402ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.827  enable_IBUF (enable_IBUF)
-     LUT4:I0->O            1   0.203   0.579  pulse1 (pulse_OBUF)
+     IBUF:I->O             3   1.222   0.651  enable_IBUF (enable_IBUF)
+     LUT2:I1->O            1   0.205   0.579  pulse1 (pulse_OBUF)
      OBUF:I->O                 2.571          pulse_OBUF (pulse)
     ----------------------------------------
-    Total                      5.402ns (3.996ns logic, 1.406ns route)
-                                       (74.0% logic, 26.0% route)
+    Total                      5.228ns (3.998ns logic, 1.230ns route)
+                                       (76.5% logic, 23.5% route)
 
 =========================================================================
 
@@ -413,29 +389,20 @@ Clock to Setup on destination clock clock
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clock          |    2.251|         |         |         |
-trigger        |    2.934|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock trigger
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clock          |    7.266|         |         |         |
+clock          |    4.190|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.92 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.72 secs
  
 --> 
 
-Total memory usage is 258708 kilobytes
+Total memory usage is 254792 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

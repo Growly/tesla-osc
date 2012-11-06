@@ -43,9 +43,10 @@ ARCHITECTURE behavior OF pulse_generator_testbench IS
     PORT(
          clock : IN  std_logic;
          enable : IN  std_logic;
-         trigger : IN  std_logic;
          pulse : OUT  std_logic;
-         counter_out : OUT  std_logic_vector(27 downto 0)
+         counter_out : OUT  std_logic_vector(27 downto 0);
+			pulse_width : IN STD_LOGIC_VECTOR(27 downto 0) := (4 => '1', others => '0');
+			duty : IN STD_LOGIC_VECTOR(27 downto 0) := (3 => '1', 2 => '1', others => '0')
         );
     END COMPONENT;
     
@@ -53,7 +54,6 @@ ARCHITECTURE behavior OF pulse_generator_testbench IS
    --Inputs
    signal clock : std_logic := '0';
    signal enable : std_logic := '0';
-   signal trigger : std_logic := '0';
 
  	--Outputs
    signal pulse : std_logic;
@@ -68,7 +68,6 @@ BEGIN
    uut: pulse_generator PORT MAP (
           clock => clock,
           enable => enable,
-          trigger => trigger,
           pulse => pulse,
           counter_out => counter_out
         );
@@ -89,20 +88,32 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
-		enable <= '1';
-
-      wait for clock_period*10;
+		wait for clock_period*10;
 
       -- insert stimulus here 
-		trigger <= '1';
-		wait for clock_period/2;
-		trigger <= '0';
 		
+		enable <= '1';	-- HI for 30 cycles, then LO for 10
+		wait for clock_period*30;
+		enable <= '0';
+		wait for clock_period*10;
+		
+		enable <= '1'; -- HI for 6 cycles, then LO for 10
+		wait for clock_period*6;
+		enable <= '0';
+		wait for clock_period*10;
+		
+		enable <= '1'; -- HI for 20 cycles, then LO for 20
+		wait for clock_period*20;
+		enable <= '0';
+		wait for clock_period*20;
+		
+		enable <= '1'; -- HI for half a cycle, LO for half a cycle.
+		wait for clock_period/2;
+		enable <= '0';
+		wait for clock_period/2;
+		
+		enable <= '1'; -- HI for many cycles.
 		wait for 1000 ms;
-		
-		trigger <= '1';
-		wait for clock_period/2;
-		trigger <= '0';
 
       wait;
    end process;
