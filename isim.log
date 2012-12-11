@@ -11,5 +11,12 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 11.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
 at 4215 ns(1), Instance /pulse_aggregator_testbench/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us

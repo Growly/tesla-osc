@@ -52,6 +52,7 @@ end pulse_aggregator;
 
 	constant duty : STD_LOGIC_VECTOR(27 downto 0) := (1 => '1', others => '0');
 	constant duty_min : STD_LOGIC_VECTOR(27 downto 0) := (3 => '1', 2 => '1', 1 => '1', others => '0');
+	constant duty_max : STD_LOGIC_VECTOR(27 downto 0) := (4 => '1', others => '0');
 	constant pulse_width_min : STD_LOGIC_VECTOR(27 downto 0) := (3 => '1', others => '0');
 	
 	signal pulses : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
@@ -97,14 +98,20 @@ begin
 		if clock = '1' and clock'event and hold_on = '1' then
 			counter_int <= counter_int + 1;
 		end if;
-		if counter_int >= 0 and counter_int < duty_min  and hold_on = '1' then
-			pulse <= '1'; -- connect to pulses here?
+		if hold_on = '1' then
+			if counter_int >= 0 and counter_int <= duty_min then
+				pulse <= '1'; -- connect to pulses here?
+			elsif counter_int > duty_min and counter_int <= duty_max then
+				pulse <= or pulses;
+			else
+				pulse <= '0';
+			end if;
+			if counter_int = pulse_width_min then
+				hold_on <= '0';
+				counter_int <= (others => '0');
+			end if;
 		else
 			pulse <= '0';
-		end if;
-		if counter_int = pulse_width_min then
-			hold_on <= '0';
-			counter_int <= (others => '0');
 		end if;
 	end process;
 	
