@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/arya/Desktop/vhdl_fun/pulse_generator_testbench_isim_beh.exe" -prj "C:/Users/arya/Desktop/vhdl_fun/pulse_generator_testbench_beh.prj" "work.pulse_generator_testbench" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator_testbench_isim_beh.exe" -prj "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator_testbench_beh.prj" "work.pulse_aggregator_testbench" 

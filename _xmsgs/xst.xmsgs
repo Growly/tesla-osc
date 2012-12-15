@@ -5,10 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\vhdl_fun\pulse_generator.vhd" Line 72: <arg fmt="%s" index="1">running</arg> should be on the sensitivity list of the process
+<msg type="error" file="HDLCompiler" num="1556" delta="new" >"C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 105: Construct illegal in this mode of VHDL
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"C:\vhdl_fun\pulse_generator.vhd" Line 79: <arg fmt="%s" index="1">running</arg> should be on the sensitivity list of the process
+<msg type="error" file="HDLCompiler" num="1731" delta="new" >"C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 105: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;or&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;or&quot;</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 41: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>

@@ -1,0 +1,3 @@
+vhdl work "pulse_generator.vhd"
+vhdl work "pulse_aggregator.vhd"
+vhdl work "pulse_aggregator_testbench.vhd"

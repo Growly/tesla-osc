@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Sat Oct 20 11:13:35 2012
+// Written by: Map P.28xd on Tue Nov 06 16:48:06 2012
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7,9 +7,6 @@ COMP "enable" LOCATE = SITE "E4" LEVEL 1;
 COMP "pulse" LOCATE = SITE "N12" LEVEL 1;
 COMP "counter_out<24>" LOCATE = SITE "U18" LEVEL 1;
 COMP "counter_out<25>" LOCATE = SITE "M14" LEVEL 1;
-COMP "trigger" LOCATE = SITE "F5" LEVEL 1;
-PIN trigger_pin<0> = BEL "trigger" PINNAME PAD;
-PIN "trigger_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "counter_out<26>" LOCATE = SITE "N14" LEVEL 1;
 COMP "clock" LOCATE = SITE "L15" LEVEL 1;
 COMP "counter_out<27>" LOCATE = SITE "L14" LEVEL 1;

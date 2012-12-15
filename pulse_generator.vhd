@@ -1,14 +1,15 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: 			Arya Reais-Parsi
 -- 
--- Create Date:    08:26:36 10/06/2012 
+-- Create Date:    	08:26:36 10/06/2012 
 -- Design Name: 
--- Module Name:    pulse_generator - Behavioral 
+-- Module Name:    	pulse_generator - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
--- Description: 
+-- Description:
+--		Generates a single complete 'square' pulse of specifiable duty and period for each rising edge of the trigger signal. Must be explicitly enabled.
 --
 -- Dependencies: 
 --
@@ -32,59 +33,42 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity pulse_generator is
-    Port ( clock : in STD_LOGIC;
-           enable : in STD_LOGIC;
-			  trigger : in STD_LOGIC;
-           pulse : out STD_LOGIC;
-			  counter_out : out STD_LOGIC_VECTOR(27 downto 0));
+    Port (	clock : in STD_LOGIC;
+				enable : in STD_LOGIC;	-- enable hi, like a badass.
+				pulse : out STD_LOGIC;
+				counter_out : out STD_LOGIC_VECTOR(27 downto 0);
+				pulse_width : STD_LOGIC_VECTOR(27 downto 0); --  := (4 => '1', others => '0'); -- TODO(growly): Better name for this signal.	
+				duty : STD_LOGIC_VECTOR(27 downto 0)	); -- := (3 => '1', 2 => '1', others => '0')	);
 end pulse_generator;
 
 architecture Behavioral of pulse_generator is
 signal counter_int : STD_LOGIC_VECTOR(27 downto 0) := (others => '0');
 signal pulse_internal : STD_LOGIC;
-signal running : STD_LOGIC := 'L';
-constant pulse_width : STD_LOGIC_VECTOR(27 downto 0) := (26 => '1', others => '0');
-constant duty : STD_LOGIC_VECTOR(27 downto 0) := (27 => '1', 26 => '1', 25 => '1', others => '0');
 begin
 
-process (trigger, counter_int)
-begin
-	-- hack hack hack: remove event attribute to avoid having to deal with timing constraints while i have no idea what they are
-	--if trigger='1' and trigger'event then
-	--	running <= '1';
-	--end if;
-	
-	-- currently retriggerable!
-	-- hmmm. variable vs signal? how to force use of latch/d flip flop? learn syntax, I guess...
-	-- using signal event trigger implies flip flop (latch), but otherwise logic is purely combinatorial. how to get around?
-	if trigger = '1' and trigger'event then
-		running <= '1';
-	end if;
-	if counter_int = duty then
-		running <= '0';
-	end if;
-end process;
-
-process (clock)
+process (enable, clock, counter_int)
 begin
 	if clock='1' and clock'event then
 		counter_int <= counter_int + 1;
 	end if;
-	if running='0' then
+	if enable='0' then
+		counter_int <= (others => '0');
+	end if;
+	if counter_int = pulse_width then
 		counter_int <= (others => '0');
 	end if;
 end process;
 
 process (counter_int)
 begin
-	if counter_int >= 0 and counter_int < pulse_width and running = '1' then
+	if counter_int >= 0 and counter_int < duty and enable = '1' then
 		pulse_internal <= '1';
 	else
 		pulse_internal <= '0';
 	end if;
 end process;
 
-pulse <= pulse_internal AND enable;
+pulse <= pulse_internal;
 
 counter_out <= counter_int;
 

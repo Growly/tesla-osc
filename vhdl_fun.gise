@@ -38,6 +38,44 @@
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/pulse_generator_synthesis.vhd"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="pulse_aggregator.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="pulse_aggregator.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="pulse_aggregator.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="pulse_aggregator.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="pulse_aggregator.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="pulse_aggregator.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="pulse_aggregator.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="pulse_aggregator.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="pulse_aggregator.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="pulse_aggregator.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_aggregator.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="pulse_aggregator.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="pulse_aggregator.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="pulse_aggregator.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="pulse_aggregator.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="pulse_aggregator.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="pulse_aggregator.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="pulse_aggregator.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="pulse_aggregator.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="pulse_aggregator_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="pulse_aggregator_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pulse_aggregator_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="pulse_aggregator_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="pulse_aggregator_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="pulse_aggregator_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="pulse_aggregator_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pulse_aggregator_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pulse_aggregator_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="pulse_aggregator_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="pulse_aggregator_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pulse_aggregator_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="pulse_aggregator_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="pulse_aggregator_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_aggregator_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pulse_aggregator_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="pulse_aggregator_testbench_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="pulse_aggregator_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pulse_aggregator_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="pulse_generator.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="pulse_generator.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="pulse_generator.bld"/>
@@ -48,18 +86,15 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="pulse_generator.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="pulse_generator.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="pulse_generator.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="pulse_generator.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="pulse_generator.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="pulse_generator.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_generator.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="pulse_generator.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="pulse_generator.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="pulse_generator.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="pulse_generator.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="pulse_generator.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="pulse_generator.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="pulse_generator.ut" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="pulse_generator.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="pulse_generator.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="pulse_generator_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="pulse_generator_guide.ncd" xil_pn:origination="imported"/>
@@ -67,18 +102,11 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="pulse_generator_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="pulse_generator_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="pulse_generator_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pulse_generator_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pulse_generator_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="pulse_generator_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="pulse_generator_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pulse_generator_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="pulse_generator_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="pulse_generator_summary.xml"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_generator_testbench_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pulse_generator_testbench_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="pulse_generator_testbench_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_generator_testbench_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="pulse_generator_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pulse_generator_testbench_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pulse_generator_xst.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
@@ -89,64 +117,83 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1349977562" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1349977562">
+    <transform xil_pn:end_ts="1352180949" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1352180949">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1350995852" xil_pn:in_ck="4344913209247992509" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1350995852">
+    <transform xil_pn:end_ts="1352187555" xil_pn:in_ck="6385684689207619282" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1352187555">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="pulse_generator.vhd"/>
-      <outfile xil_pn:name="pulse_generator_testbench.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1350995688" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1592909261024216828" xil_pn:start_ts="1350995688">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1350995688" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2402574134328399234" xil_pn:start_ts="1350995688">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1349977562" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4938654095255497279" xil_pn:start_ts="1349977562">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1350995852" xil_pn:in_ck="4344913209247992509" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1350995852">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="pulse_generator.vhd"/>
-      <outfile xil_pn:name="pulse_generator_testbench.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1350995856" xil_pn:in_ck="4344913209247992509" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6737792639438618792" xil_pn:start_ts="1350995852">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="pulse_aggregator.vhd"/>
+      <outfile xil_pn:name="pulse_aggregator_testbench.vhd"/>
+      <outfile xil_pn:name="pulse_generator.vhd"/>
+      <outfile xil_pn:name="pulse_generator_testbench.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1352187448" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1736166272446427296" xil_pn:start_ts="1352187448">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1352187448" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8286051384395463394" xil_pn:start_ts="1352187448">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1352184241" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1429760393970583203" xil_pn:start_ts="1352184241">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1352187555" xil_pn:in_ck="6385684689207619282" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1352187555">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="pulse_aggregator.vhd"/>
+      <outfile xil_pn:name="pulse_aggregator_testbench.vhd"/>
+      <outfile xil_pn:name="pulse_generator.vhd"/>
+      <outfile xil_pn:name="pulse_generator_testbench.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1352187560" xil_pn:in_ck="6385684689207619282" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3698360600952944160" xil_pn:start_ts="1352187555">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="pulse_generator_testbench_beh.prj"/>
-      <outfile xil_pn:name="pulse_generator_testbench_isim_beh.exe"/>
+      <outfile xil_pn:name="pulse_aggregator_testbench_beh.prj"/>
+      <outfile xil_pn:name="pulse_aggregator_testbench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1350995856" xil_pn:in_ck="-3686809699897031331" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="9221721040469968213" xil_pn:start_ts="1350995856">
+    <transform xil_pn:end_ts="1352249546" xil_pn:in_ck="399661391316265104" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-129714039630736595" xil_pn:start_ts="1352249545">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="pulse_generator_testbench_isim_beh.wdb"/>
+      <outfile xil_pn:name="pulse_aggregator_testbench_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1349770577" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1349770577">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1349770577" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8419285270618682256" xil_pn:start_ts="1349770577">
+    <transform xil_pn:end_ts="1352183840" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7543311752579458796" xil_pn:start_ts="1352183840">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1349770577" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4938654095255497279" xil_pn:start_ts="1349770577">
+    <transform xil_pn:end_ts="1352183840" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1429760393970583203" xil_pn:start_ts="1352183840">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -154,7 +201,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1349770578" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-5663720984473343278" xil_pn:start_ts="1349770578">
+    <transform xil_pn:end_ts="1352183840" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3972707177281406574" xil_pn:start_ts="1352183840">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -162,72 +209,79 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1350675155" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8550113387404215029" xil_pn:start_ts="1350675155">
+    <transform xil_pn:end_ts="1352183840" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8519291481088592359" xil_pn:start_ts="1352183840">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1350718928" xil_pn:in_ck="4657417251753916319" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6472584692918823706" xil_pn:start_ts="1350718920">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
+    <transform xil_pn:end_ts="1352443055" xil_pn:in_ck="602828887595733786" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6111048233046820278" xil_pn:start_ts="1352443046">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="pulse_generator.lso"/>
-      <outfile xil_pn:name="pulse_generator.ngc"/>
+      <outfile xil_pn:name="pulse_aggregator.lso"/>
+      <outfile xil_pn:name="pulse_aggregator.ngc"/>
+      <outfile xil_pn:name="pulse_aggregator.ngr"/>
+      <outfile xil_pn:name="pulse_aggregator.prj"/>
+      <outfile xil_pn:name="pulse_aggregator.syr"/>
+      <outfile xil_pn:name="pulse_aggregator.xst"/>
+      <outfile xil_pn:name="pulse_aggregator_testbench_beh.prj"/>
+      <outfile xil_pn:name="pulse_aggregator_xst.xrpt"/>
       <outfile xil_pn:name="pulse_generator.ngr"/>
-      <outfile xil_pn:name="pulse_generator.prj"/>
-      <outfile xil_pn:name="pulse_generator.stx"/>
-      <outfile xil_pn:name="pulse_generator.syr"/>
-      <outfile xil_pn:name="pulse_generator.xst"/>
-      <outfile xil_pn:name="pulse_generator_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1350718998" xil_pn:in_ck="4657417251753915067" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3942512081126765255" xil_pn:start_ts="1350718998">
+    <transform xil_pn:end_ts="1352184414" xil_pn:in_ck="4657417251753915067" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1867043574678980893" xil_pn:start_ts="1352184414">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1350719004" xil_pn:in_ck="-2407038351001462256" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2662232149681121548" xil_pn:start_ts="1350718998">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1352185296" xil_pn:in_ck="8391315943424252929" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8234414359159026360" xil_pn:start_ts="1352185286">
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="pulse_generator.bld"/>
-      <outfile xil_pn:name="pulse_generator.ngd"/>
-      <outfile xil_pn:name="pulse_generator_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="pulse_aggregator.bld"/>
+      <outfile xil_pn:name="pulse_aggregator.ngd"/>
+      <outfile xil_pn:name="pulse_aggregator_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1350719017" xil_pn:in_ck="-8121895744002586511" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4245753365082497697" xil_pn:start_ts="1350719004">
+    <transform xil_pn:end_ts="1352185321" xil_pn:in_ck="-441322815682245853" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4245753365082497697" xil_pn:start_ts="1352185296">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="pulse_generator.pcf"/>
-      <outfile xil_pn:name="pulse_generator_map.map"/>
-      <outfile xil_pn:name="pulse_generator_map.mrp"/>
-      <outfile xil_pn:name="pulse_generator_map.ncd"/>
-      <outfile xil_pn:name="pulse_generator_map.ngm"/>
-      <outfile xil_pn:name="pulse_generator_map.xrpt"/>
-      <outfile xil_pn:name="pulse_generator_summary.xml"/>
-      <outfile xil_pn:name="pulse_generator_usage.xml"/>
+      <outfile xil_pn:name="pulse_aggregator.pcf"/>
+      <outfile xil_pn:name="pulse_aggregator_map.map"/>
+      <outfile xil_pn:name="pulse_aggregator_map.mrp"/>
+      <outfile xil_pn:name="pulse_aggregator_map.ncd"/>
+      <outfile xil_pn:name="pulse_aggregator_map.ngm"/>
+      <outfile xil_pn:name="pulse_aggregator_map.xrpt"/>
+      <outfile xil_pn:name="pulse_aggregator_summary.xml"/>
+      <outfile xil_pn:name="pulse_aggregator_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1350719035" xil_pn:in_ck="-3539206240149506070" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1350719017">
+    <transform xil_pn:end_ts="1352185353" xil_pn:in_ck="-1293645818727501067" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1352185321">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="pulse_generator.ncd"/>
-      <outfile xil_pn:name="pulse_generator.pad"/>
-      <outfile xil_pn:name="pulse_generator.par"/>
-      <outfile xil_pn:name="pulse_generator.ptwx"/>
-      <outfile xil_pn:name="pulse_generator.unroutes"/>
-      <outfile xil_pn:name="pulse_generator.xpi"/>
-      <outfile xil_pn:name="pulse_generator_pad.csv"/>
-      <outfile xil_pn:name="pulse_generator_pad.txt"/>
-      <outfile xil_pn:name="pulse_generator_par.xrpt"/>
+      <outfile xil_pn:name="pulse_aggregator.ncd"/>
+      <outfile xil_pn:name="pulse_aggregator.pad"/>
+      <outfile xil_pn:name="pulse_aggregator.par"/>
+      <outfile xil_pn:name="pulse_aggregator.ptwx"/>
+      <outfile xil_pn:name="pulse_aggregator.unroutes"/>
+      <outfile xil_pn:name="pulse_aggregator.xpi"/>
+      <outfile xil_pn:name="pulse_aggregator_pad.csv"/>
+      <outfile xil_pn:name="pulse_aggregator_pad.txt"/>
+      <outfile xil_pn:name="pulse_aggregator_par.xrpt"/>
     </transform>
     <transform xil_pn:end_ts="1350719050" xil_pn:in_ck="4657417251753907442" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1350719035">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="pulse_generator.bgn"/>
       <outfile xil_pn:name="pulse_generator.bit"/>
@@ -237,23 +291,29 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1350719035" xil_pn:in_ck="8369517183763750509" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1350719028">
+    <transform xil_pn:end_ts="1352185353" xil_pn:in_ck="3322116742673841563" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1352185340">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="pulse_generator.twr"/>
-      <outfile xil_pn:name="pulse_generator.twx"/>
+      <outfile xil_pn:name="pulse_aggregator.twr"/>
+      <outfile xil_pn:name="pulse_aggregator.twx"/>
     </transform>
     <transform xil_pn:end_ts="1350675361" xil_pn:in_ck="-8121895744002586511" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1350675361">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1349977368" xil_pn:in_ck="4657417251753907573" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="3038539603382613562" xil_pn:start_ts="1349977364">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/pulse_generator_synthesis.nlf"/>

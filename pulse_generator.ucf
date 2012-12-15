@@ -1,18 +1,15 @@
+NET "notes_on[0]" LOC = E4;
 
-
-NET "enable" LOC = E4;
 NET "pulse" LOC = N12;
 NET "clock" LOC = L15;
 
-
-NET "counter_out[27]" LOC = L14;
-NET "counter_out[26]" LOC = N14;
-NET "counter_out[25]" LOC = M14;
-NET "counter_out[24]" LOC = U18;
+#
+#NET "counter_out[27]" LOC = L14;
+#NET "counter_out[26]" LOC = N14;
+#NET "counter_out[25]" LOC = M14;
+#NET "counter_out[24]" LOC = U18;
 
 # PlanAhead Generated physical constraints 
 
-NET "trigger" LOC = F5;
-
 # This is bad, but I don't yet understand why, exactly
-NET "trigger" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "trigger" CLOCK_DEDICATED_ROUTE = FALSE;
