@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-11-07T11:52:11</DateModified>
+  <DateModified>2012-12-20T01:08:44</DateModified>
   <ModuleName>pulse_aggregator</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/arya/Documents/GitHub/tesla-osc/iseconfig/pulse_aggregator.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/arya/Documents/GitHub/tesla-osc</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/arya/Documents/GitHub/tesla-osc\</ImplementationReportsDirectory>
   <DateInitialized>2012-11-07T11:52:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

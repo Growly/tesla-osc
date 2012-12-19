@@ -16,3 +16,6 @@ trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pulse_aggregator.twx pulse_agg
 xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.syr" 
 xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.syr" 
 xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.syr" 

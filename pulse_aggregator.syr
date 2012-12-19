@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: pulse_aggregator.prj
 
@@ -117,7 +117,7 @@ ERROR:HDLCompiler:854 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregat
 VHDL file C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd ignored due to errors
 --> 
 
-Total memory usage is 203404 kilobytes
+Total memory usage is 205652 kilobytes
 
 Number of errors   :    3 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

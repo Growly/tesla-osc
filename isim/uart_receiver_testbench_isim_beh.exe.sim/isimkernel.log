@@ -1,0 +1,29 @@
+Command line:
+   uart_receiver_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  10954
+
+Thu Dec 20 01:28:10 2012
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 505.926 Meg
+
+ Total Signals          : 17
+ Total Nets             : 47
+ Total Signal Drivers   : 7
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 5
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 426
+Total Line Count : 16
+
+ Total Simulation Time: 49.3431 sec
+
+ Current Memory Usage: 505.926 Meg
+
+Thu Dec 20 01:29:49 2012
+

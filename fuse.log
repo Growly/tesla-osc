@@ -1,22 +1,20 @@
-Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator_testbench_isim_beh.exe -prj C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator_testbench_beh.prj work.pulse_aggregator_testbench 
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/arya/Documents/GitHub/tesla-osc/uart_receiver_testbench_isim_beh.exe -prj C:/Users/arya/Documents/GitHub/tesla-osc/uart_receiver_testbench_beh.prj work.uart_receiver_testbench 
 ISim P.28xd (signature 0xa0883be4)
-Number of CPUs detected in this system: 1
-Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_generator.vhd" into library work
-Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.vhd" into library work
-Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator_testbench.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/uart_receiver.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/uart_receiver_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling architecture behavioral of entity pulse_generator [pulse_generator_default]
-Compiling architecture behavioral of entity pulse_aggregator [pulse_aggregator_default]
-Compiling architecture behavior of entity pulse_aggregator_testbench
+Compiling architecture behavioral of entity uart_receiver [uart_receiver_default]
+Compiling architecture behavior of entity uart_receiver_testbench
 Time Resolution for simulation is 1ps.
-Compiled 9 VHDL Units
-Built simulation executable C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator_testbench_isim_beh.exe
-Fuse Memory Usage: 32160 KB
-Fuse CPU Usage: 763 ms
+Compiled 7 VHDL Units
+Built simulation executable C:/Users/arya/Documents/GitHub/tesla-osc/uart_receiver_testbench_isim_beh.exe
+Fuse Memory Usage: 34348 KB
+Fuse CPU Usage: 561 ms
