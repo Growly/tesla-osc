@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.ncd
+OUTFILE=C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\arya\Documents\GitHub\tesla-osc
+LICENSE=WebPack
+USER_INFO=210566181_0_0_453

@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity pulse_aggregator is
-    Port ( notes_on : in  STD_LOGIC_VECTOR(7 downto 0);
+    Port ( notes_on : in  STD_LOGIC_VECTOR(15 downto 0);
 			  clock : in	STD_LOGIC;	-- This is the worst editor, ever.
 			  counter : out STD_LOGIC_VECTOR(27 downto 0);
            pulse : out  STD_LOGIC);
@@ -55,7 +55,7 @@ end pulse_aggregator;
 	constant duty_max : STD_LOGIC_VECTOR(27 downto 0) := (4 => '1', others => '0');
 	constant pulse_width_min : STD_LOGIC_VECTOR(27 downto 0) := (3 => '1', others => '0');
 	
-	signal pulses : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
+	signal pulses : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
 	signal hold_on : STD_LOGIC := 'L';
 	signal counter_int : STD_LOGIC_VECTOR(27 downto 0) := (others => '0');
 
@@ -88,7 +88,7 @@ begin
 		pulse => pulses(2)
 	);
 	
-	pulses(7 downto 2) <= (others => '0');
+	pulses(15 downto 3) <= (others => '0');
 	
 	process (clock, pulses, hold_on, counter_int)
 	begin	
@@ -102,7 +102,12 @@ begin
 			if counter_int >= 0 and counter_int <= duty_min then
 				pulse <= '1'; -- connect to pulses here?
 			elsif counter_int > duty_min and counter_int <= duty_max then
-				pulse <= or pulses;
+				if pulses > 0 then
+					pulse <= '1';
+				else
+					pulse <= '0';
+				end if;
+				-- pulse <= or pulses; -- generates ' HDLCompiler:1556 Construct illegal in this mode of VHDL'
 			else
 				pulse <= '0';
 			end if;

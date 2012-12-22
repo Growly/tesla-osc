@@ -9,40 +9,40 @@ INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_
 Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 start_gui
-source C:/vhdl_fun/pa.fromNetlist.tcl
-# create_project -name vhdl_fun -dir "C:/vhdl_fun/planAhead_run_1" -part xc6slx45csg324-3
+source C:/Users/arya/Documents/GitHub/tesla-osc/pa.fromHdl.tcl
+# create_project -name vhdl_fun -dir "C:/Users/arya/Documents/GitHub/tesla-osc/planAhead_run_1" -part xc6slx45csg324-3
 Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
 Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
 Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
 Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
 Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
 Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
-# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
-# set_property edif_top_file "C:/vhdl_fun/pulse_generator.ngc" [ get_property srcset [ current_run ] ]
-# add_files -norecurse { {C:/vhdl_fun} }
-# set_property target_constrs_file "pulse_generator.ucf" [current_fileset -constrset]
-Adding file 'C:/vhdl_fun/pulse_generator.ucf' to fileset 'constrs_1'
-# add_files [list {pulse_generator.ucf}] -fileset [get_property constrset [current_run]]
-# link_design
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
-Design is defaulting to project part: xc6slx45csg324-3
-Release 14.2 - ngc2edif P.28xd (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-Reading design pulse_generator.ngc ...
-WARNING:NetListWriters:298 - No output is written to pulse_generator.xncf,
-   ignored.
-Processing design ...
-   Preping design's networks ...
-   Preping design's macros ...
-  finished :Prep
-Writing EDIF netlist file pulse_generator.edif ...
-ngc2edif: Total memory usage is 79460 kilobytes
-
-Parsing EDIF File [./planAhead_run_1/vhdl_fun.data/cache/pulse_generator_ngc_31844072.edif]
-Finished Parsing EDIF File [./planAhead_run_1/vhdl_fun.data/cache/pulse_generator_ngc_31844072.edif]
-INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "tesla_osc.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {pulse_generator.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {uart_receiver.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {pulse_aggregator.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {tesla_osc.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top tesla_osc $srcset
+# add_files [list {tesla_osc.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45csg324-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_generator.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/uart_receiver.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.vhd" into library work
 Loading clock regions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
 Loading clock buffers from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
 Loading package pin functions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
@@ -50,14 +50,17 @@ Loading package from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/
 Loading io standards from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
 Loading device configuration modes from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
 Loading list of drcs for the architecture : C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
-Parsing UCF File [C:/vhdl_fun/pulse_generator.ucf]
-Finished Parsing UCF File [C:/vhdl_fun/pulse_generator.ucf]
+Parsing UCF File [C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.ucf]
+Finished Parsing UCF File [C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.ucf]
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  BUFGP => BUFGP (IBUFG, BUFG): 1 instances
+No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 303c7f48
-link_design: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 568.344 ; gain = 139.793
+Phase 0 | Netlist Checksum: 790368fc
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 631.320 ; gain = 181.633
+startgroup
+set_property package_pin B16 [get_ports midi_rxd]
+endgroup
+save_design
 exit
 INFO: [Common 17-206] Exiting PlanAhead...
 INFO: [Common 17-83] Releasing license: PlanAhead

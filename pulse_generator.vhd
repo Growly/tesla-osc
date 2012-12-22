@@ -46,7 +46,7 @@ signal counter_int : STD_LOGIC_VECTOR(27 downto 0) := (others => '0');
 signal pulse_internal : STD_LOGIC;
 begin
 
-process (enable, clock, counter_int)
+process (enable, clock, counter_int, pulse_width)
 begin
 	if clock='1' and clock'event then
 		counter_int <= counter_int + 1;
@@ -59,7 +59,7 @@ begin
 	end if;
 end process;
 
-process (counter_int)
+process (counter_int, duty, enable)
 begin
 	if counter_int >= 0 and counter_int < duty and enable = '1' then
 		pulse_internal <= '1';

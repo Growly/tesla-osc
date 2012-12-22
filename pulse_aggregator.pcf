@@ -1,10 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Tue Nov 06 18:02:00 2012
+// Written by: Map P.28xd on Sat Dec 22 17:02:10 2012
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "notes_on<0>" LOCATE = SITE "E4" LEVEL 1;
-COMP "pulse" LOCATE = SITE "N12" LEVEL 1;
 COMP "clock" LOCATE = SITE "L15" LEVEL 1;
+COMP "pulse" LOCATE = SITE "N12" LEVEL 1;
+COMP "notes_on<0>" LOCATE = SITE "E4" LEVEL 1;
 SCHEMATIC END;
 

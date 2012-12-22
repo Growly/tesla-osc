@@ -41,36 +41,39 @@ ARCHITECTURE behavior OF uart_receiver_testbench IS
  
     COMPONENT uart_receiver
     PORT(
-         receive : IN  std_logic;
+         receive_data : IN  std_logic;
          clock : IN  std_logic;
          enable : IN  std_logic;
          byte_out : OUT  std_logic_vector(0 to 7);
-         data_ready : OUT  std_logic
+         data_ready : OUT  std_logic;
+			reset : IN std_logic
         );
     END COMPONENT;
     
 
    --Inputs
-   signal receive : std_logic := '0';
+   signal receive_data : std_logic := '1';
    signal clock : std_logic := '0';
    signal enable : std_logic := '0';
+	signal reset : std_logic := '0';
 
  	--Outputs
    signal byte_out : std_logic_vector(0 to 7);
    signal data_ready : std_logic;
 
    -- Clock period definitions
-   constant clock_period : time := 41667 ps;
+   constant clock_period : time := 41667 ps;		-- 24 MHz clock
  
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: uart_receiver PORT MAP (
-          receive => receive,
+          receive_data => receive_data,
           clock => clock,
           enable => enable,
           byte_out => byte_out,
-          data_ready => data_ready
+          data_ready => data_ready,
+			 reset => reset
         );
 
    -- Clock process definitions
@@ -89,9 +92,51 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
-      wait for clock_period*10000;
+      wait for clock_period*100;
 
-      -- insert stimulus here 
+		-- midi note 7 on example: 10010111. Sent on the line in reverse bit order?
+		-- 0 11101001 1
+		receive_data <= '0';
+		wait for clock_period*768;		-- f = 31250 Hz
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '0';
+		wait for clock_period*768;
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '0';
+		wait for clock_period*768;
+		receive_data <= '0';
+		wait for clock_period*768;
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '1';
+		-- byte_out should now have 10010111; data_ready should be 1, for 1 clock cycle.
+				wait for clock_period*768;
+		receive_data <= '0';
+		wait for clock_period*768;
+		receive_data <= '0';
+		wait for clock_period*768;
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '0';
+		wait for clock_period*768;
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '0';
+		wait for clock_period*768;
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '0';
+		wait for clock_period*768;
+		receive_data <= '1';
+		wait for clock_period*768;
+		receive_data <= '1';
+		-- byte_out should now have 10101010; data_ready should be 1, for 1 clock cycle.
 
       wait;
    end process;

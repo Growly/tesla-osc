@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
 # PlanAhead v14.2 (64-bit)
 # Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
-# Start of session at: Fri Oct 19 23:17:49 2012
-# Process ID: 7160
-# Log file: C:/vhdl_fun/planAhead_run_2/planAhead.log
-# Journal file: C:/vhdl_fun/planAhead_run_2/planAhead.jou
+# Start of session at: Sat Dec 22 18:43:31 2012
+# Process ID: 4568
+# Log file: C:/Users/arya/Documents/GitHub/tesla-osc/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/arya/Documents/GitHub/tesla-osc/planAhead_run_2/planAhead.jou
 #-----------------------------------------------------------
 INFO: [Common 17-78] Attempting to get a license: PlanAhead
 INFO: [Common 17-290] Got license for PlanAhead
@@ -12,8 +12,8 @@ INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_
 Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 start_gui
-source C:/vhdl_fun/pa.fromHdl.tcl
-# create_project -name vhdl_fun -dir "C:/vhdl_fun/planAhead_run_2" -part xc6slx45csg324-3
+source C:/Users/arya/Documents/GitHub/tesla-osc/pa.fromHdl.tcl
+# create_project -name vhdl_fun -dir "C:/Users/arya/Documents/GitHub/tesla-osc/planAhead_run_2" -part xc6slx45csg324-3
 Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
 Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
 Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
@@ -22,18 +22,30 @@ Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml]
 Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
 # set_param project.pinAheadLayout yes
 # set srcset [get_property srcset [current_run -impl]]
-# set_property target_constrs_file "pulse_generator.ucf" [current_fileset -constrset]
-Adding file 'C:/vhdl_fun/pulse_generator.ucf' to fileset 'constrs_1'
+# set_property target_constrs_file "tesla_osc.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.ucf' to fileset 'constrs_1'
 # set hdlfile [add_files [list {pulse_generator.vhd}]]
 # set_property file_type VHDL $hdlfile
 # set_property library work $hdlfile
-# set_property top pulse_generator $srcset
-# add_files [list {pulse_generator.ucf}] -fileset [get_property constrset [current_run]]
+# set hdlfile [add_files [list {uart_receiver.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {pulse_aggregator.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {tesla_osc.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top tesla_osc $srcset
+# add_files [list {tesla_osc.ucf}] -fileset [get_property constrset [current_run]]
 # open_rtl_design -part xc6slx45csg324-3
 Using Verific elaboration
 Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
 Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
-Parsing VHDL file "C:/vhdl_fun/pulse_generator.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_generator.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/uart_receiver.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/pulse_aggregator.vhd" into library work
+Parsing VHDL file "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.vhd" into library work
 Loading clock regions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
 Loading clock buffers from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
 Loading package pin functions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
@@ -41,13 +53,17 @@ Loading package from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/
 Loading io standards from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
 Loading device configuration modes from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
 Loading list of drcs for the architecture : C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
-Parsing UCF File [C:/vhdl_fun/pulse_generator.ucf]
-Finished Parsing UCF File [C:/vhdl_fun/pulse_generator.ucf]
+Parsing UCF File [C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.ucf]
+Finished Parsing UCF File [C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.ucf]
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 72028226
-open_rtl_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 584.008 ; gain = 165.621
+Phase 0 | Netlist Checksum: 790368fc
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 611.449 ; gain = 163.172
+startgroup
+set_property package_pin A16 [get_ports midi_rxd]
+endgroup
+save_design
 exit
 INFO: [Common 17-206] Exiting PlanAhead...
 INFO: [Common 17-83] Releasing license: PlanAhead
