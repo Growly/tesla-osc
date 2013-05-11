@@ -8,7 +8,10 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/arya/Documents/GitHub/tesla-osc/uart_receiver.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.vhd</arg>&quot; Line <arg fmt="%d" index="2">165</arg>. <arg fmt="%s" index="3">Syntax error near &quot;midi_channels_on&quot;.</arg>
 </msg>
 
 </messages>

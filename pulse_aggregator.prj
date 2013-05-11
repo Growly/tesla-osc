@@ -1,3 +1,2 @@
-vhdl work "uart_receiver.vhd"
 vhdl work "pulse_generator.vhd"
 vhdl work "pulse_aggregator.vhd"

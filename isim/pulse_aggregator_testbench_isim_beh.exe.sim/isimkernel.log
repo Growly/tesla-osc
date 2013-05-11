@@ -1,0 +1,29 @@
+Command line:
+   pulse_aggregator_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50203
+
+Sat May 11 10:41:31 2013
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 505.221 Meg
+
+ Total Signals          : 41
+ Total Nets             : 430
+ Total Signal Drivers   : 19
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 17
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 921
+Total Line Count : 78
+
+ Total Simulation Time: 0.249601 sec
+
+ Current Memory Usage: 505.221 Meg
+
+Sat May 11 10:46:22 2013
+

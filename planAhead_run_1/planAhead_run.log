@@ -5,18 +5,20 @@
 
 INFO: [Common 17-78] Attempting to get a license: PlanAhead
 INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in 20 day(s)
 INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
 Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 start_gui
 source C:/Users/arya/Documents/GitHub/tesla-osc/pa.fromHdl.tcl
-# create_project -name vhdl_fun -dir "C:/Users/arya/Documents/GitHub/tesla-osc/planAhead_run_1" -part xc6slx45csg324-3
+# create_project -name vhdl_fun -dir "C:/Users/arya/Documents/GitHub/tesla-osc/planAhead_run_2" -part xc6slx45csg324-3
 Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
 Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
 Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
 Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
 Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
 Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 256.754 ; gain = 0.000
 # set_param project.pinAheadLayout yes
 # set srcset [get_property srcset [current_run -impl]]
 # set_property target_constrs_file "tesla_osc.ucf" [current_fileset -constrset]
@@ -55,12 +57,8 @@ Finished Parsing UCF File [C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.uc
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 790368fc
-open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 631.320 ; gain = 181.633
-startgroup
-set_property package_pin B16 [get_ports midi_rxd]
-endgroup
-save_design
+Phase 0 | Netlist Checksum: 8d3572c7
+open_rtl_design: Time (s): elapsed = 00:00:27 . Memory (MB): peak = 377.660 ; gain = 120.180
 exit
 INFO: [Common 17-206] Exiting PlanAhead...
 INFO: [Common 17-83] Releasing license: PlanAhead

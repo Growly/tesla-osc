@@ -84,3 +84,72 @@ map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off tesla_osc_map.ncd tesla_osc.ncd tesla_osc.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tesla_osc.twx tesla_osc.ncd -o tesla_osc.twr tesla_osc.pcf -ucf tesla_osc.ucf 
 bitgen -intstyle ise -f tesla_osc.ut tesla_osc.ncd 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tesla_osc.ucf -p xc6slx45-csg324-3 tesla_osc.ngc tesla_osc.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tesla_osc_map.ncd tesla_osc.ngd tesla_osc.pcf 
+par -w -intstyle ise -ol high -mt off tesla_osc_map.ncd tesla_osc.ncd tesla_osc.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tesla_osc.twx tesla_osc.ncd -o tesla_osc.twr tesla_osc.pcf -ucf tesla_osc.ucf 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tesla_osc.ucf -p xc6slx45-csg324-3 tesla_osc.ngc tesla_osc.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tesla_osc_map.ncd tesla_osc.ngd tesla_osc.pcf 
+par -w -intstyle ise -ol high -mt off tesla_osc_map.ncd tesla_osc.ncd tesla_osc.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tesla_osc.twx tesla_osc.ncd -o tesla_osc.twr tesla_osc.pcf -ucf tesla_osc.ucf 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tesla_osc.ucf -p xc6slx45-csg324-3 tesla_osc.ngc tesla_osc.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tesla_osc_map.ncd tesla_osc.ngd tesla_osc.pcf 
+par -w -intstyle ise -ol high -mt off tesla_osc_map.ncd tesla_osc.ncd tesla_osc.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tesla_osc.twx tesla_osc.ncd -o tesla_osc.twr tesla_osc.pcf -ucf tesla_osc.ucf 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tesla_osc.ucf -p xc6slx45-csg324-3 tesla_osc.ngc tesla_osc.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tesla_osc_map.ncd tesla_osc.ngd tesla_osc.pcf 
+par -w -intstyle ise -ol high -mt off tesla_osc_map.ncd tesla_osc.ncd tesla_osc.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tesla_osc.twx tesla_osc.ncd -o tesla_osc.twr tesla_osc.pcf -ucf tesla_osc.ucf 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tesla_osc.ucf -p xc6slx45-csg324-3 tesla_osc.ngc tesla_osc.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o tesla_osc_map.ncd tesla_osc.ngd tesla_osc.pcf 
+par -w -intstyle ise -ol high -mt off tesla_osc_map.ncd tesla_osc.ncd tesla_osc.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml tesla_osc.twx tesla_osc.ncd -o tesla_osc.twr tesla_osc.pcf -ucf tesla_osc.ucf 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 
+xst -intstyle ise -ifn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.xst" -ofn "C:/Users/arya/Documents/GitHub/tesla-osc/tesla_osc.syr" 

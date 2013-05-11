@@ -15,6 +15,14 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
+WARNING:NgdBuild:470 - bidirect pad net 'leds<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'leds<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'leds<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'leds<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'leds<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'leds<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'leds<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'leds<0>' has no legal driver
 
 Partition Implementation Status
 -------------------------------
@@ -25,12 +33,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   0
+  Number of warnings:   8
 
-Total memory usage is 158264 kilobytes
+Total memory usage is 158300 kilobytes
 
 Writing NGD file "tesla_osc.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
+Total REAL time to NGDBUILD completion:  4 sec
 Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "tesla_osc.bld"...

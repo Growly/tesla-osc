@@ -37,7 +37,7 @@ entity pulse_generator is
 				enable : in STD_LOGIC;	-- enable hi, like a badass.
 				pulse : out STD_LOGIC;
 				counter_out : out STD_LOGIC_VECTOR(27 downto 0);
-				pulse_width : STD_LOGIC_VECTOR(27 downto 0); --  := (4 => '1', others => '0'); -- TODO(growly): Better name for this signal.	
+				period : STD_LOGIC_VECTOR(27 downto 0); --  := (4 => '1', others => '0'); -- TODO(growly): Better name for this signal.	
 				duty : STD_LOGIC_VECTOR(27 downto 0)	); -- := (3 => '1', 2 => '1', others => '0')	);
 end pulse_generator;
 
@@ -46,7 +46,7 @@ signal counter_int : STD_LOGIC_VECTOR(27 downto 0) := (others => '0');
 signal pulse_internal : STD_LOGIC;
 begin
 
-process (enable, clock, counter_int, pulse_width)
+process (enable, clock, counter_int, period)
 begin
 	if clock='1' and clock'event then
 		counter_int <= counter_int + 1;
@@ -54,7 +54,7 @@ begin
 	if enable='0' then
 		counter_int <= (others => '0');
 	end if;
-	if counter_int = pulse_width then
+	if counter_int = period then
 		counter_int <= (others => '0');
 	end if;
 end process;

@@ -1,0 +1,79 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/arya/Documents/GitHub/tesla-osc/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/arya/Documents/GitHub/tesla-osc/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Reading design: pulse_aggregator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+ERROR:HDLCompiler:488 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 34: Illegal identifier : _element_array
+ERROR:HDLCompiler:488 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 35: Illegal identifier : _element_matrix
+ERROR:HDLCompiler:488 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 35: Illegal identifier : _element_array
+ERROR:HDLCompiler:488 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 39: Illegal identifier : _element_matrix
+Parsing VHDL file "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_generator.vhd" into library work
+Parsing entity <pulse_generator>.
+Parsing architecture <Behavioral> of entity <pulse_generator>.
+Parsing VHDL file "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" into library work
+ERROR:HDLCompiler:806 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 34: Syntax error near "subtype".
+ERROR:HDLCompiler:488 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 34: Illegal identifier : _element_array
+ERROR:HDLCompiler:488 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 35: Illegal identifier : _element_matrix
+Parsing entity <pulse_aggregator>.
+ERROR:HDLCompiler:806 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 39: Syntax error near "256".
+ERROR:HDLCompiler:488 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 39: Illegal identifier : _element_matrix
+ERROR:HDLCompiler:854 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 37: Unit <pulse_aggregator> ignored due to previous errors.
+Parsing architecture <Behavioral> of entity <pulse_aggregator>.
+ERROR:HDLCompiler:374 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 45: Entity <pulse_aggregator> is not yet compiled.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 49: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 50: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 51: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 52: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 53: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 57: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 58: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 59: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 60: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 62: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 63: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" Line 64: <std_logic_vector> is not declared.
+Sorry, too many errors..
+--> 
+
+Total memory usage is 181220 kilobytes
+
+Number of errors   :   23 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

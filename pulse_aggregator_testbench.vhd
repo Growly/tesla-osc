@@ -41,7 +41,7 @@ ARCHITECTURE behavior OF pulse_aggregator_testbench IS
  
     COMPONENT pulse_aggregator
     PORT(
-         notes_on : IN  std_logic_vector(7 downto 0);
+         channels_on : IN  std_logic_vector(15 downto 0);
          clock : IN  std_logic;
 			counter : OUT std_logic_vector(27 downto 0);
          pulse : OUT  std_logic
@@ -50,7 +50,7 @@ ARCHITECTURE behavior OF pulse_aggregator_testbench IS
     
 
    --Inputs
-   signal notes_on : std_logic_vector(7 downto 0) := (others => '0');
+   signal channels_on : std_logic_vector(15 downto 0) := (others => '0');
    signal clock : std_logic := '0';
 
  	--Outputs
@@ -64,7 +64,7 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: pulse_aggregator PORT MAP (
-          notes_on => notes_on,
+          channels_on => channels_on,
           clock => clock,
 			 counter => counter,
           pulse => pulse
@@ -88,30 +88,30 @@ BEGIN
 		
 		-- prepare for stimulus
 
-		notes_on(0) <= '1';
+		channels_on(0) <= '1';
       wait for clock_period*10;
-		notes_on(0) <= '0';
+		channels_on(0) <= '0';
 		wait for clock_period*30;
 		
-		notes_on(1) <= '1';
+		channels_on(1) <= '1';
       wait for clock_period*10;
-		notes_on(1) <= '0';
+		channels_on(1) <= '0';
 		wait for clock_period*30;
 		
-		notes_on(0) <= '1';
+		channels_on(0) <= '1';
 		wait for clock_period*100;
-		notes_on(1) <= '1';
+		channels_on(1) <= '1';
 		wait for clock_period*100;
-		notes_on <= (others => '0');
+		channels_on <= (others => '0');
 		wait for clock_period*30;
 		
-		notes_on(0) <= '1';
+		channels_on(0) <= '1';
 		wait for clock_period*50;
-		notes_on(1) <= '1';
+		channels_on(1) <= '1';
 		wait for clock_period*50;
-		notes_on(2) <= '1';
+		channels_on(2) <= '1';
 		wait for clock_period*2000;
-		notes_on <= (others => '0');
+		channels_on <= (others => '0');
 		wait for clock_period*30;
 
       wait;

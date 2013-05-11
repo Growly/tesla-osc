@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-12-22T23:08:06</DateModified>
+  <DateModified>2013-05-11T12:29:02</DateModified>
   <ModuleName>tesla_osc</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2013-05-11T12:28:57</SummaryTimeStamp>
   <SavedFilePath>C:/Users/arya/Documents/GitHub/tesla-osc/iseconfig/tesla_osc.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/arya/Documents/GitHub/tesla-osc\</ImplementationReportsDirectory>
   <DateInitialized>2012-12-22T22:11:42</DateInitialized>

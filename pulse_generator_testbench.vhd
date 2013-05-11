@@ -45,7 +45,7 @@ ARCHITECTURE behavior OF pulse_generator_testbench IS
          enable : IN  std_logic;
          pulse : OUT  std_logic;
          counter_out : OUT  std_logic_vector(27 downto 0);
-			pulse_width : IN STD_LOGIC_VECTOR(27 downto 0) := (4 => '1', others => '0');
+			period : IN STD_LOGIC_VECTOR(27 downto 0) := (4 => '1', others => '0');
 			duty : IN STD_LOGIC_VECTOR(27 downto 0) := (3 => '1', 2 => '1', others => '0')
         );
     END COMPONENT;

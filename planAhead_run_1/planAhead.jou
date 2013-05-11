@@ -1,14 +1,10 @@
 #-----------------------------------------------------------
 # PlanAhead v14.2 (64-bit)
 # Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
-# Start of session at: Sat Dec 22 18:26:34 2012
-# Process ID: 8780
+# Start of session at: Sat May 11 12:16:07 2013
+# Process ID: 3648
 # Log file: C:/Users/arya/Documents/GitHub/tesla-osc/planAhead_run_1/planAhead.log
 # Journal file: C:/Users/arya/Documents/GitHub/tesla-osc/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
 start_gui
 source C:/Users/arya/Documents/GitHub/tesla-osc/pa.fromHdl.tcl
-startgroup
-set_property package_pin B16 [get_ports midi_rxd]
-endgroup
-save_design
