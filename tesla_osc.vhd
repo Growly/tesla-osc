@@ -19,8 +19,9 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
+--use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 use work.types.ALL;
 
@@ -91,7 +92,7 @@ architecture Behavioral of tesla_osc is
 	--
 	-- Message type, parsed from bits 6-4.
 	signal midi_current_command : MIDI_COMMAND := NONE_VALID;
-	-- The channel on which the command operates, parsed from bits 3 to 0.
+	-- The channel on which the command operates, read from bits 3 to 0.
 	signal midi_current_channel : NATURAL := 0;
 	
 	signal midi_channels_on : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
@@ -155,18 +156,18 @@ begin
 					-- Data message.
 					if midi_current_command /= NONE_VALID then
 						midi_data_messages <= midi_data_messages(7 downto 0) & midi_data_byte;
-						midi_data_message_count <= midi_data_message_count + 1;
+						midi_data_message_count <= midi_data_message_count + '1';
 					end if;
 					
 					case midi_current_command is
 						when NOTE_ON =>
 							if midi_data_message_count = 2 then
-a								-- need a function to map notes to periods.
-								midi_channels_on(midi_current_channel) <= 1;
+								-- need a function to map notes to periods.
+								midi_channels_on(midi_current_channel) <= '1';
 							end if;
 						when NOTE_OFF =>
 							if midi_data_message_count = 2 then
-								midi_channels_on(midi_current_channel) <= 0;
+								midi_channels_on(midi_current_channel) <= '0';
 							end if;
 						when others => null;
 					end case;

@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: tesla_osc.prj
 
@@ -120,17 +120,1058 @@ Parsing architecture <Behavioral> of entity <pulse_aggregator>.
 Parsing VHDL file "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" into library work
 Parsing entity <tesla_osc>.
 Parsing architecture <Behavioral> of entity <tesla_osc>.
-ERROR:HDLCompiler:69 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 153: <to_integer> is not declared.
-ERROR:HDLCompiler:806 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 165: Syntax error near "midi_channels_on".
-ERROR:HDLCompiler:839 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 165: Type std_ulogic does not match with the integer literal
-ERROR:HDLCompiler:839 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 169: Type std_ulogic does not match with the integer literal
-ERROR:HDLCompiler:854 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 44: Unit <behavioral> ignored due to previous errors.
-VHDL file C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd ignored due to errors
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <tesla_osc> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 100: Using initial value ("0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000","0000000000000000000000000000") for midi_channels_period since it is never assigned
+
+Elaborating entity <uart_receiver> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <pulse_aggregator> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pulse_generator> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 142: midi_data_byte should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 144: midi_data_byte should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 154: midi_data_byte should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 157: midi_current_command should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 158: midi_data_messages should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 162: midi_current_command should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 166: midi_current_channel should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" Line 170: midi_current_channel should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <tesla_osc>.
+    Related source file is "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd".
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\tesla_osc.vhd" line 114: Output port <counter> of the instance <pulses> is unconnected or connected to loadless signal.
+    Found 4-bit adder for signal <midi_data_message_count[3]_GND_7_o_add_2_OUT> created at line 159.
+    Found 8x2-bit Read Only RAM for signal <_n0334>
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_current_command<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_current_command<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_current_channel<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_current_channel<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_current_channel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_current_channel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_data_message_count<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_data_message_count<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_data_message_count<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_data_message_count<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_channels_on<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <midi_current_command<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 Latch(s).
+	inferred  16 Multiplexer(s).
+Unit <tesla_osc> synthesized.
+
+Synthesizing Unit <uart_receiver>.
+    Related source file is "C:\Users\arya\Documents\GitHub\tesla-osc\uart_receiver.vhd".
+WARNING:Xst:647 - Input <enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <pulse_count>.
+    Found 12-bit register for signal <clock_count>.
+    Found 2-bit register for signal <current_state>.
+    Found 8-bit register for signal <receive_count>.
+    Found 10-bit register for signal <shift_register>.
+    Found 1-bit register for signal <data_ready>.
+    Found 8-bit register for signal <byte_out>.
+    Found 1-bit register for signal <sample_pulse>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <pulse_count[2]_GND_8_o_add_2_OUT> created at line 81.
+    Found 12-bit adder for signal <clock_count[11]_GND_8_o_add_3_OUT> created at line 86.
+    Found 8-bit adder for signal <receive_count[7]_GND_8_o_add_14_OUT> created at line 131.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_receiver> synthesized.
+
+Synthesizing Unit <pulse_aggregator>.
+    Related source file is "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd".
+WARNING:Xst:647 - Input <channels_period<16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 66: Output port <counter_out> of the instance <channel_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 75: Output port <counter_out> of the instance <channel_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 84: Output port <counter_out> of the instance <channel_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 94: Output port <counter_out> of the instance <channel_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 104: Output port <counter_out> of the instance <channel_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 114: Output port <counter_out> of the instance <channel_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 124: Output port <counter_out> of the instance <channel_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 134: Output port <counter_out> of the instance <channel_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 144: Output port <counter_out> of the instance <channel_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 154: Output port <counter_out> of the instance <channel_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 164: Output port <counter_out> of the instance <channel_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 174: Output port <counter_out> of the instance <channel_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 184: Output port <counter_out> of the instance <channel_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 194: Output port <counter_out> of the instance <channel_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 203: Output port <counter_out> of the instance <channel_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_aggregator.vhd" line 212: Output port <counter_out> of the instance <channel_15> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <hold_on>.
+    Found 28-bit register for signal <counter_int>.
+    Found 28-bit adder for signal <counter_int[27]_GND_10_o_add_1_OUT> created at line 227.
+    Found 28-bit comparator greater for signal <n0004> created at line 230
+    Found 28-bit comparator lessequal for signal <n0007> created at line 232
+    Found 16-bit comparator greater for signal <GND_10_o_pulses[15]_LessThan_8_o> created at line 233
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <pulse_aggregator> synthesized.
+
+Synthesizing Unit <pulse_generator>.
+    Related source file is "C:\Users\arya\Documents\GitHub\tesla-osc\pulse_generator.vhd".
+    Found 28-bit register for signal <counter_int>.
+    Found 28-bit adder for signal <counter_int[27]_GND_11_o_add_0_OUT> created at line 52.
+    Found 28-bit comparator equal for signal <counter_int[27]_period[27]_equal_3_o> created at line 57
+    Found 28-bit comparator greater for signal <counter_int[27]_duty[27]_LessThan_4_o> created at line 64
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <pulse_generator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x2-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 21
+ 12-bit adder                                          : 1
+ 28-bit adder                                          : 17
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 25
+ 1-bit register                                        : 3
+ 10-bit register                                       : 1
+ 12-bit register                                       : 1
+ 28-bit register                                       : 17
+ 3-bit register                                        : 1
+ 8-bit register                                        : 2
+# Latches                                              : 27
+ 1-bit latch                                           : 27
+# Comparators                                          : 35
+ 16-bit comparator greater                             : 1
+ 28-bit comparator equal                               : 16
+ 28-bit comparator greater                             : 17
+ 28-bit comparator lessequal                           : 1
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 19
+ 12-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <midi_current_command_2> has a constant value of 0 in block <tesla_osc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <shift_register_0> of sequential type is unconnected in block <uart>.
+
+Synthesizing (advanced) Unit <pulse_aggregator>.
+The following registers are absorbed into counter <counter_int>: 1 register on signal <counter_int>.
+Unit <pulse_aggregator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pulse_generator>.
+The following registers are absorbed into counter <counter_int>: 1 register on signal <counter_int>.
+Unit <pulse_generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <tesla_osc>.
+INFO:Xst:3231 - The small RAM <Mram__n0334> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <midi_data_byte<6:4>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <tesla_osc> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_receiver>.
+The following registers are absorbed into counter <clock_count>: 1 register on signal <clock_count>.
+The following registers are absorbed into counter <pulse_count>: 1 register on signal <pulse_count>.
+Unit <uart_receiver> synthesized (advanced).
+WARNING:Xst:2677 - Node <shift_register_0> of sequential type is unconnected in block <uart_receiver>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x2-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 19
+ 12-bit up counter                                     : 1
+ 28-bit up counter                                     : 17
+ 3-bit up counter                                      : 1
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+# Comparators                                          : 35
+ 16-bit comparator greater                             : 1
+ 28-bit comparator equal                               : 16
+ 28-bit comparator greater                             : 17
+ 28-bit comparator lessequal                           : 1
+# Multiplexers                                         : 21
+ 1-bit 2-to-1 multiplexer                              : 19
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <midi_current_command_2> has a constant value of 0 in block <tesla_osc>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart/FSM_0> on signal <current_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ recv  | 01
+ done  | 10
+-------------------
+
+Optimizing unit <tesla_osc> ...
+
+Optimizing unit <uart_receiver> ...
+
+Optimizing unit <pulse_aggregator> ...
+WARNING:Xst:1293 - FF/Latch <uart/clock_count_11> has a constant value of 0 in block <tesla_osc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart/clock_count_10> has a constant value of 0 in block <tesla_osc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uart/clock_count_9> has a constant value of 0 in block <tesla_osc>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block tesla_osc, actual ratio is 3.
+
+Final Macro Processing ...
+
+Processing Unit <tesla_osc> :
+	Found 2-bit shift register for signal <uart/shift_register_8>.
+Unit <tesla_osc> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 516
+ Flip-Flops                                            : 516
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : tesla_osc.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2028
+#      GND                         : 1
+#      INV                         : 23
+#      LUT1                        : 485
+#      LUT2                        : 45
+#      LUT3                        : 25
+#      LUT4                        : 40
+#      LUT5                        : 160
+#      LUT6                        : 90
+#      MUXCY                       : 673
+#      VCC                         : 1
+#      XORCY                       : 485
+# FlipFlops/Latches                : 543
+#      FD                          : 12
+#      FDC                         : 458
+#      FDCE                        : 31
+#      FDE                         : 16
+#      LD                          : 26
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             543  out of  54576     0%  
+ Number of Slice LUTs:                  869  out of  27288     3%  
+    Number used as Logic:               868  out of  27288     3%  
+    Number used as Memory:                1  out of   6408     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    899
+   Number with an unused Flip Flop:     356  out of    899    39%  
+   Number with an unused LUT:            30  out of    899     3%  
+   Number of fully used LUT-FF pairs:   513  out of    899    57%  
+   Number of unique control sets:        42
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                   4  out of    218     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------+-----------------------------------+-------+
+Clock Signal                                                        | Clock buffer(FF name)             | Load  |
+--------------------------------------------------------------------+-----------------------------------+-------+
+reset_midi_data_ready_AND_107_o(reset_midi_data_ready_AND_107_o1:O) | NONE(*)(midi_data_message_count_2)| 4     |
+reset_midi_data_ready_AND_219_o(reset_midi_data_ready_AND_219_o1:O) | NONE(*)(midi_channels_on_5)       | 1     |
+reset_midi_data_ready_AND_214_o(reset_midi_data_ready_AND_214_o1:O) | NONE(*)(midi_channels_on_6)       | 1     |
+reset_midi_data_ready_AND_229_o(reset_midi_data_ready_AND_229_o1:O) | NONE(*)(midi_channels_on_3)       | 1     |
+reset_midi_data_ready_AND_224_o(reset_midi_data_ready_AND_224_o1:O) | NONE(*)(midi_channels_on_4)       | 1     |
+reset_midi_data_ready_AND_179_o(reset_midi_data_ready_AND_179_o1:O) | NONE(*)(midi_channels_on_13)      | 1     |
+reset_midi_data_ready_AND_169_o(reset_midi_data_ready_AND_169_o2:O) | NONE(*)(midi_channels_on_15)      | 1     |
+reset_midi_data_ready_AND_174_o(reset_midi_data_ready_AND_174_o2:O) | NONE(*)(midi_channels_on_14)      | 1     |
+reset_midi_data_ready_AND_194_o(reset_midi_data_ready_AND_194_o1:O) | NONE(*)(midi_channels_on_10)      | 1     |
+reset_midi_data_ready_AND_184_o(reset_midi_data_ready_AND_184_o1:O) | NONE(*)(midi_channels_on_12)      | 1     |
+reset_midi_data_ready_AND_189_o(reset_midi_data_ready_AND_189_o1:O) | NONE(*)(midi_channels_on_11)      | 1     |
+reset_midi_data_ready_AND_209_o(reset_midi_data_ready_AND_209_o1:O) | NONE(*)(midi_channels_on_7)       | 1     |
+reset_midi_data_ready_AND_199_o(reset_midi_data_ready_AND_199_o1:O) | NONE(*)(midi_channels_on_9)       | 1     |
+reset_midi_data_ready_AND_204_o(reset_midi_data_ready_AND_204_o1:O) | NONE(*)(midi_channels_on_8)       | 1     |
+reset_midi_data_ready_AND_244_o(reset_midi_data_ready_AND_244_o1:O) | NONE(*)(midi_channels_on_0)       | 1     |
+reset_midi_data_ready_AND_234_o(reset_midi_data_ready_AND_234_o1:O) | NONE(*)(midi_channels_on_2)       | 1     |
+reset_midi_data_ready_AND_239_o(reset_midi_data_ready_AND_239_o1:O) | NONE(*)(midi_channels_on_1)       | 1     |
+reset_midi_data_ready_AND_40_o(reset_midi_data_ready_AND_40_o<7>1:O)| NONE(*)(midi_current_channel_3)   | 6     |
+clock                                                               | BUFGP                             | 518   |
+--------------------------------------------------------------------+-----------------------------------+-------+
+(*) These 18 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.399ns (Maximum Frequency: 227.342MHz)
+   Minimum input arrival time before clock: 2.248ns
+   Maximum output required time after clock: 8.479ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'reset_midi_data_ready_AND_107_o'
+  Clock period: 2.121ns (frequency: 471.387MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               2.121ns (Levels of Logic = 1)
+  Source:            midi_data_message_count_0 (LATCH)
+  Destination:       midi_data_message_count_0 (LATCH)
+  Source Clock:      reset_midi_data_ready_AND_107_o falling
+  Destination Clock: reset_midi_data_ready_AND_107_o falling
+
+  Data Path: midi_data_message_count_0 to midi_data_message_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               8   0.498   0.802  midi_data_message_count_0 (midi_data_message_count_0)
+     INV:I->O              1   0.206   0.579  Madd_midi_data_message_count[3]_GND_7_o_add_2_OUT_xor<0>11_INV_0 (midi_data_message_count[3]_GND_7_o_add_2_OUT<0>)
+     LD:D                      0.037          midi_data_message_count_0
+    ----------------------------------------
+    Total                      2.121ns (0.741ns logic, 1.380ns route)
+                                       (34.9% logic, 65.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.399ns (frequency: 227.342MHz)
+  Total number of paths / destination ports: 21499 / 1054
+-------------------------------------------------------------------------
+Delay:               4.399ns (Levels of Logic = 8)
+  Source:            pulses/channel_4/counter_int_6 (FF)
+  Destination:       pulses/hold_on (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: pulses/channel_4/counter_int_6 to pulses/hold_on
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   1.028  pulses/channel_4/counter_int_6 (pulses/channel_4/counter_int_6)
+     LUT5:I0->O            1   0.203   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_lut<1> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<1> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<2> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<3> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<4> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.808  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<5> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<5>)
+     LUT6:I3->O            2   0.205   0.961  pulses/_n0043_inv1 (pulses/_n0043_inv1)
+     LUT6:I1->O            1   0.203   0.000  pulses/hold_on_rstpot (pulses/hold_on_rstpot)
+     FDC:D                     0.102          pulses/hold_on
+    ----------------------------------------
+    Total                      4.399ns (1.602ns logic, 2.797ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.248ns (Levels of Logic = 2)
+  Source:            midi_rxd (PAD)
+  Destination:       uart/current_state_FSM_FFd2 (FF)
+  Destination Clock: clock rising
+
+  Data Path: midi_rxd to uart/current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.721  midi_rxd_IBUF (midi_rxd_IBUF)
+     LUT4:I2->O            1   0.203   0.000  uart/current_state_FSM_FFd2-In1 (uart/current_state_FSM_FFd2-In)
+     FD:D                      0.102          uart/current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      2.248ns (1.527ns logic, 0.721ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 910 / 1
+-------------------------------------------------------------------------
+Offset:              8.479ns (Levels of Logic = 10)
+  Source:            pulses/channel_4/counter_int_6 (FF)
+  Destination:       pulse (PAD)
+  Source Clock:      clock rising
+
+  Data Path: pulses/channel_4/counter_int_6 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   1.028  pulses/channel_4/counter_int_6 (pulses/channel_4/counter_int_6)
+     LUT5:I0->O            1   0.203   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_lut<1> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<1> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<2> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<3> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<4> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.808  pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<5> (pulses/channel_4/Mcompar_counter_int[27]_duty[27]_LessThan_4_o_cy<5>)
+     LUT6:I3->O            2   0.205   0.981  pulses/_n0043_inv1 (pulses/_n0043_inv1)
+     LUT6:I0->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      8.479ns (4.276ns logic, 4.203ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_224_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.029ns (Levels of Logic = 4)
+  Source:            midi_channels_on_4 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_224_o falling
+
+  Data Path: midi_channels_on_4 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.981  midi_channels_on_4 (midi_channels_on_4)
+     LUT6:I0->O            2   0.203   0.981  pulses/_n0043_inv1 (pulses/_n0043_inv1)
+     LUT6:I0->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      7.029ns (3.680ns logic, 3.349ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_234_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.009ns (Levels of Logic = 4)
+  Source:            midi_channels_on_2 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_234_o falling
+
+  Data Path: midi_channels_on_2 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.961  midi_channels_on_2 (midi_channels_on_2)
+     LUT6:I1->O            2   0.203   0.981  pulses/_n0043_inv1 (pulses/_n0043_inv1)
+     LUT6:I0->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      7.009ns (3.680ns logic, 3.329ns route)
+                                       (52.5% logic, 47.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_229_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.912ns (Levels of Logic = 4)
+  Source:            midi_channels_on_3 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_229_o falling
+
+  Data Path: midi_channels_on_3 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.864  midi_channels_on_3 (midi_channels_on_3)
+     LUT6:I2->O            2   0.203   0.981  pulses/_n0043_inv1 (pulses/_n0043_inv1)
+     LUT6:I0->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.912ns (3.680ns logic, 3.232ns route)
+                                       (53.2% logic, 46.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_209_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.009ns (Levels of Logic = 4)
+  Source:            midi_channels_on_7 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_209_o falling
+
+  Data Path: midi_channels_on_7 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.981  midi_channels_on_7 (midi_channels_on_7)
+     LUT6:I0->O            2   0.203   0.961  pulses/_n0043_inv2 (pulses/_n0043_inv2)
+     LUT6:I1->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      7.009ns (3.680ns logic, 3.329ns route)
+                                       (52.5% logic, 47.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_219_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.989ns (Levels of Logic = 4)
+  Source:            midi_channels_on_5 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_219_o falling
+
+  Data Path: midi_channels_on_5 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.961  midi_channels_on_5 (midi_channels_on_5)
+     LUT6:I1->O            2   0.203   0.961  pulses/_n0043_inv2 (pulses/_n0043_inv2)
+     LUT6:I1->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.989ns (3.680ns logic, 3.309ns route)
+                                       (52.7% logic, 47.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_214_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.892ns (Levels of Logic = 4)
+  Source:            midi_channels_on_6 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_214_o falling
+
+  Data Path: midi_channels_on_6 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.864  midi_channels_on_6 (midi_channels_on_6)
+     LUT6:I2->O            2   0.203   0.961  pulses/_n0043_inv2 (pulses/_n0043_inv2)
+     LUT6:I1->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.892ns (3.680ns logic, 3.212ns route)
+                                       (53.4% logic, 46.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_174_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.912ns (Levels of Logic = 4)
+  Source:            midi_channels_on_14 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_174_o falling
+
+  Data Path: midi_channels_on_14 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.981  midi_channels_on_14 (midi_channels_on_14)
+     LUT6:I0->O            2   0.203   0.864  pulses/_n0043_inv3 (pulses/_n0043_inv3)
+     LUT6:I2->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.912ns (3.680ns logic, 3.232ns route)
+                                       (53.2% logic, 46.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_184_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.892ns (Levels of Logic = 4)
+  Source:            midi_channels_on_12 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_184_o falling
+
+  Data Path: midi_channels_on_12 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.961  midi_channels_on_12 (midi_channels_on_12)
+     LUT6:I1->O            2   0.203   0.864  pulses/_n0043_inv3 (pulses/_n0043_inv3)
+     LUT6:I2->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.892ns (3.680ns logic, 3.212ns route)
+                                       (53.4% logic, 46.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_179_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.795ns (Levels of Logic = 4)
+  Source:            midi_channels_on_13 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_179_o falling
+
+  Data Path: midi_channels_on_13 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.864  midi_channels_on_13 (midi_channels_on_13)
+     LUT6:I2->O            2   0.203   0.864  pulses/_n0043_inv3 (pulses/_n0043_inv3)
+     LUT6:I2->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.795ns (3.680ns logic, 3.115ns route)
+                                       (54.2% logic, 45.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_239_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.895ns (Levels of Logic = 4)
+  Source:            midi_channels_on_1 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_239_o falling
+
+  Data Path: midi_channels_on_1 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.981  midi_channels_on_1 (midi_channels_on_1)
+     LUT6:I0->O            2   0.203   0.845  pulses/_n0043_inv4 (pulses/_n0043_inv4)
+     LUT6:I3->O            1   0.205   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.895ns (3.682ns logic, 3.213ns route)
+                                       (53.4% logic, 46.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_169_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.875ns (Levels of Logic = 4)
+  Source:            midi_channels_on_15 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_169_o falling
+
+  Data Path: midi_channels_on_15 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.961  midi_channels_on_15 (midi_channels_on_15)
+     LUT6:I1->O            2   0.203   0.845  pulses/_n0043_inv4 (pulses/_n0043_inv4)
+     LUT6:I3->O            1   0.205   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.875ns (3.682ns logic, 3.193ns route)
+                                       (53.6% logic, 46.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_244_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.778ns (Levels of Logic = 4)
+  Source:            midi_channels_on_0 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_244_o falling
+
+  Data Path: midi_channels_on_0 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.864  midi_channels_on_0 (midi_channels_on_0)
+     LUT6:I2->O            2   0.203   0.845  pulses/_n0043_inv4 (pulses/_n0043_inv4)
+     LUT6:I3->O            1   0.205   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.778ns (3.682ns logic, 3.096ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_194_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.769ns (Levels of Logic = 4)
+  Source:            midi_channels_on_10 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_194_o falling
+
+  Data Path: midi_channels_on_10 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.981  midi_channels_on_10 (midi_channels_on_10)
+     LUT6:I0->O            2   0.203   0.721  pulses/_n0043_inv5 (pulses/_n0043_inv5)
+     LUT6:I4->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.769ns (3.680ns logic, 3.089ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_204_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.749ns (Levels of Logic = 4)
+  Source:            midi_channels_on_8 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_204_o falling
+
+  Data Path: midi_channels_on_8 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.961  midi_channels_on_8 (midi_channels_on_8)
+     LUT6:I1->O            2   0.203   0.721  pulses/_n0043_inv5 (pulses/_n0043_inv5)
+     LUT6:I4->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.749ns (3.680ns logic, 3.069ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_199_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.652ns (Levels of Logic = 4)
+  Source:            midi_channels_on_9 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_199_o falling
+
+  Data Path: midi_channels_on_9 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.864  midi_channels_on_9 (midi_channels_on_9)
+     LUT6:I2->O            2   0.203   0.721  pulses/_n0043_inv5 (pulses/_n0043_inv5)
+     LUT6:I4->O            1   0.203   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.652ns (3.680ns logic, 2.972ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_midi_data_ready_AND_189_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.477ns (Levels of Logic = 5)
+  Source:            midi_channels_on_11 (LATCH)
+  Destination:       pulse (PAD)
+  Source Clock:      reset_midi_data_ready_AND_189_o falling
+
+  Data Path: midi_channels_on_11 to pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.617  midi_channels_on_11 (midi_channels_on_11)
+     LUT1:I0->O            1   0.205   0.000  pulses/_n0043_inv6_cy_rt (pulses/_n0043_inv6_cy_rt)
+     MUXCY:S->O            2   0.172   0.617  pulses/_n0043_inv6_cy (pulses/_n0043_inv6)
+     LUT6:I5->O            1   0.205   0.808  pulses/_n0043_inv7 (pulses/_n0043_inv)
+     LUT4:I1->O            1   0.205   0.579  pulses/Mmux_pulse11 (pulse_OBUF)
+     OBUF:I->O                 2.571          pulse_OBUF (pulse)
+    ----------------------------------------
+    Total                      6.477ns (3.856ns logic, 2.621ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+clock                          |    4.399|         |         |         |
+reset_midi_data_ready_AND_169_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_174_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_179_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_184_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_189_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_194_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_199_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_204_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_209_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_214_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_219_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_224_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_229_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_234_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_239_o|         |    3.396|         |         |
+reset_midi_data_ready_AND_244_o|         |    3.396|         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_107_o
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_107_o|         |         |    2.121|         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_169_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_174_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_179_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_184_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_189_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_194_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_199_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_204_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_209_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_214_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_219_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_224_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_229_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_234_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_239_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_244_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+reset_midi_data_ready_AND_40_o|         |         |    2.427|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_midi_data_ready_AND_40_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |         |         |    1.534|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.24 secs
+ 
 --> 
 
-Total memory usage is 203280 kilobytes
+Total memory usage is 256000 kilobytes
 
-Number of errors   :    5 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   45 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
 
